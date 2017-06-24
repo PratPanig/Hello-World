@@ -1,9 +1,9 @@
 
 public class mergeTwoArrays {
-	public static void merge(int[] a, int[] b, int n, int m) {
-		int k = m + n - 1; // Index of last location of array b
-		 int i = n - 1; // Index of last element in array b
-		 int j = m - 1; // Index of last element in array a
+	public static void merge(int[] a, int[] b) {
+		int j=b.length-1;
+		int i=a.length-b.length-1;
+		int k = a.length-1; // Index of last location of array a
 		
 		 // Start comparing from the last element and merge a and b
 		 while (i >= 0 && j >= 0) {
@@ -13,20 +13,32 @@ public class mergeTwoArrays {
 		 a[k--] = b[j--];
 		 }
 		 }
-		 while (j >= 0) {
-		 a[k--] = b[j--];
-		 } 
+		 
+		 if(i>=0){
+			while(i>=0){
+					a[k--] = a[i--];
+				}
+			}
+
+		if(j>=0){
+			while(j>=0){
+					a[k--] = a[j--];
+				}
+			}
 		 }
 	
 	public static void main(String[] args){
-		int[] a= new int[10];
-		int x=1;
-		for(int i=0;i<4;i++){
-			a[i]=x+2*i;
-		}
+		int[] a= new int[9];
+		a[0]=1;a[1]=3;a[2]=5;a[3]=7;a[4]=9;
 		int[] b={2,4,6,8};
-		merge(a,b,4,4);
-		for(int y=0;y<a.length;y++)
-			System.out.println(a[y]);
+		for(int i:a)
+			System.out.print(i+" ");
+		System.out.println();
+		for(int i:b)
+			System.out.print(i+" ");
+		System.out.println();
+		merge(a,b);
+		for(int y:a)
+			System.out.print(y+" ");
 	}
 }

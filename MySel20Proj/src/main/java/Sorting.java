@@ -1,4 +1,3 @@
-import java.util.*;
 public class Test {
 public static void insertionSort(int[] num){
 	int j; // no. of sorted elements
@@ -69,5 +68,5 @@ int[] arr={67,69,76,84,89,91,94};
 //insertionSort(arr);
 //bubbleSort(arr);
 //selectionSort(arr);
-binarySearch(arr,0,arr.length,84);
+//binarySearch(arr,0,arr.length,84);
 }}
