@@ -1,4 +1,4 @@
-public class Test {
+public class Sorting {
 public static void insertionSort(int[] num){
 	int j; // no. of sorted elements
 	int key; // the item to be inserted
