@@ -3,7 +3,7 @@ import java.io.IOException;
 public class CheckAndMakePalindromeNumber {
 
 	public static void main(String[] args) throws IOException {
-		int input1 = 112111122;
+		int input1 = 222111122;
 		boolean isPalindrome = checkPalindrome(input1);
 		if (isPalindrome) {
 			System.out.println("The input is Palindrome");

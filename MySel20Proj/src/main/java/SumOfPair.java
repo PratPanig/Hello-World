@@ -21,10 +21,14 @@ public class SumOfPair {
 	 public static void main(String []args){
 	         int[] arr = {0,1,2,2,3,4,5};
 	         int num = 4;
-	         /*for(int i=0;i<arr.length;i++){
-	             for(int j=1;j<arr.length;j++){
-	                 if(arr[i]+arr[j]==num)
-	                	 System.out.println(arr[i] +", " + arr[j]);
+	         /*Set<Integer> hs=new HashSet<Integer>();
+	         for(int i=0;i<arr.length;i++){        	 
+	             for(int j=1;j<arr.length;j++){           	 
+	                 if(arr[i]+arr[j]==num){
+	                	 if(!hs.contains(arr[i]))
+	                		 System.out.println(arr[i] +", " + arr[j]);
+	                	 hs.add(arr[i]);
+	                 }
 	            }
 	       }*/
 	         findpairs(arr,4);

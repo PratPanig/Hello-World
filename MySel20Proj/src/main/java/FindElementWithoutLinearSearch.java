@@ -12,7 +12,7 @@ public class FindElementWithoutLinearSearch {
 	                	break;
 	                if(arr[index]==element)
 	                {
-	                        System.out.println("element found at "+index+" position");
+	                        System.out.println("element is found at "+index+" position");
 	                        break;
 	                }
 	                else
@@ -20,11 +20,11 @@ public class FindElementWithoutLinearSearch {
 
 	        }
 	        if(index>=arr.length)
-	        	System.out.println("Element not found  ");
+	        	System.out.println("Element not found");
 	}
 	public static void main(String[] args){
 		int arr[]={1,2,3,4,3,4,5,6,7};
-		find(arr,4);
+		find(arr,6);
 	}
 }
 

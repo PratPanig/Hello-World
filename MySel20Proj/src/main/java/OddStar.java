@@ -22,6 +22,6 @@ public class OddStar {
 
 	     public static void main(String []args){
 	    	 OddStar sp= new OddStar();
-	            sp.printOddNumberPattern(7);
+	            sp.printOddNumberPattern(5);
 	     }
 }

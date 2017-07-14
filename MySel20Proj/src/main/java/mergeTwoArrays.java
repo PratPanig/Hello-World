@@ -22,7 +22,7 @@ public class mergeTwoArrays {
 
 		if(j>=0){
 			while(j>=0){
-					a[k--] = a[j--];
+					a[k--] = b[j--];
 				}
 			}
 		 }
