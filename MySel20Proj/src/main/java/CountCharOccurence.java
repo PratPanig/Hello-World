@@ -1,4 +1,5 @@
 import java.util.Hashtable;
+
 public class CountCharOccurence {
 	public static void main(String[] args) {
 		String word = "PROGRAM";
